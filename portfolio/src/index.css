@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@keyframes rollIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes rollOut {
+  from {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.roll-in {
+  animation: rollIn 0.4s ease forwards;
+}
+
+.roll-out {
+  animation: rollOut 0.4s ease forwards;
+}
